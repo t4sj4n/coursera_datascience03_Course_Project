@@ -52,6 +52,9 @@ run_analysis <- function()
    
     # write tidy data to file
     write.table(tidy_data, file="./tidy_data.txt", sep="\t", row.names=FALSE)
+    
+    #generate codebook.md
+    knit("makeCodebook.Rmd", output="codebook.md", encoding="ISO8859-1", quiet=TRUE)
   
 }
 
