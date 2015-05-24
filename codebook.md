@@ -1,7 +1,15 @@
 Codebook
 ---
 
-Generated: 2015-05-22 18:19:58
+Generated: 2015-05-24 12:40:01
+
+`run_analysis.R` processes the following data set:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+- Merges the training and the test sets to create one data set.
+- Extracts only the measurements on the mean and standard deviation for each measurement. 
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive variable names. 
+- Creates a second, independent tidy data set with the average of each variable for each activity and each subject, and outputs to `tidy_data.txt`
 
 
 
@@ -171,9 +179,3 @@ head(tidy_data)
 ##   (dbl), fBodyBodyGyroMag-mean() (dbl), fBodyBodyGyroMag-std() (dbl),
 ##   fBodyBodyGyroJerkMag-mean() (dbl), fBodyBodyGyroJerkMag-std() (dbl)
 ```
-
-You can also embed plots, for example:
-
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
